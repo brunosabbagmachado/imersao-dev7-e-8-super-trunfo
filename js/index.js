@@ -1,34 +1,32 @@
-var carta1 = {
-    nome: 'Bulbassauro',
-    imagem: 'https://pm1.narvii.com/6400/9605b20ead97651b0d9bdb48eab5c49d3c504d3f_hq.jpg',
-    atributos: {
-        ataque: 7,
-        defesa: 8,
-        magia: 6
+var cartas = [
+    carta1 = {
+        nome: 'Bulbassauro',
+        imagem: 'https://pm1.narvii.com/6400/9605b20ead97651b0d9bdb48eab5c49d3c504d3f_hq.jpg',
+        atributos: {
+            ataque: 7,
+            defesa: 8,
+            magia: 6
+        }
+    },
+    carta2 = {
+        nome: 'Darth Vader',
+        imagem: 'https://cdn.ome.lt/qnK3hf0_08-cjuoRDb98LkEg3Do=/1200x630/smart/extras/conteudos/darth-vader-fortnite.jpg',
+        atributos: {
+            ataque: 9,
+            defesa: 8,
+            magia: 2
+        }
+    },
+    carta3 = {
+        nome: 'Shiryu de dragão',
+        imagem: 'https://s.aficionados.com.br/imagens/shiryu.jpg',
+        atributos: {
+            ataque: 5,
+            defesa: 9,
+            magia: 10
+        }
     }
-};
-
-var carta2 = {
-    nome: 'Darth Vader',
-    imagem: 'https://cdn.ome.lt/qnK3hf0_08-cjuoRDb98LkEg3Do=/1200x630/smart/extras/conteudos/darth-vader-fortnite.jpg',
-    atributos: {
-        ataque: 9,
-        defesa: 8,
-        magia: 2
-    }
-};
-
-var carta3 = {
-    nome: 'Shiryu de dragão',
-    imagem: 'https://s.aficionados.com.br/imagens/shiryu.jpg',
-    atributos: {
-        ataque: 5,
-        defesa: 9,
-        magia: 10
-    }
-};
-
-var cartas = [carta1, carta2, carta3];
+];
 
 var cartaMaquina;
 var cartaJogador;
@@ -45,9 +43,9 @@ function sortearCarta() {
     cartaJogador = cartas[numeroCartaJogador];
 
     document.querySelector('#btnSortear').disabled = true;
-    document.querySelector('#btnJogar').disabled = false/
+    document.querySelector('#btnJogar').disabled = false /
 
-    exibirCartaJogador();
+        exibirCartaJogador();
 }
 
 function obtemAtributoSelecionado() {
